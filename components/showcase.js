@@ -1,6 +1,6 @@
 import React from "react";
 
-const Showcase = () => {
+const Shell = () => {
   return (
     <div className="flex flex-col mt-20">
       <div className="flex flex-col items-center justify-center">
@@ -105,5 +105,4 @@ const Showcase = () => {
   );
 };
 
-export default Showcase;
-
+export default Shell;
