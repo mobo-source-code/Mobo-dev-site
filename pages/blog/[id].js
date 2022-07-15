@@ -22,7 +22,7 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async (context) => {
     const id = context.params.id;
-    const res = await axios.get(`https://mobodev.herokuapp.com/api/posts/${id}?populate=*`)
+    const res = await axios.get(`https://mobodev.herokuapp.com/api/posts/${id}/?populate=*`)
     const post = res.data.data
     console.log(post)
 

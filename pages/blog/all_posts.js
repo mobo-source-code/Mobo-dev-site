@@ -5,9 +5,9 @@ import Image from "next/image";
 import Footer from "../../components/footer";
 import { NextSeo } from "next-seo";
 
-const All_Posts = ({posts}) => {
+const All_Posts = ({posts, posts2}) => {
     
-    console.log(posts)
+    console.log(posts2.attributes.cover.data.attributes.url)
 
     const SEO = {
         title: 'MoboDev Blog Section for Insight and Guidance about how to use technology to grow your business',
@@ -47,15 +47,15 @@ export default All_Posts
 
 export let getServerSideProps = async () => {
     const res = await axios.get("https://mobodev.herokuapp.com/api/posts?populate=*")
-    const res2 = await axios.get("https://mobodev.herokuapp.com/api/posts/1?populate=*")
+    const res2 = await axios.get("https://mobodev.herokuapp.com/api/posts/1/?populate=*")
     const posts = res.data.data
     const posts2 =  res2.data.data
 
-    console.log(posts2.attributes.cover.data.attributes.url)
     
     return {
         props: {
-            posts: posts
+            posts: posts,
+            posts2: posts2
         }
     }
 }
