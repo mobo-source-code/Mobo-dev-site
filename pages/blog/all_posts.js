@@ -47,8 +47,11 @@ export default All_Posts
 
 export let getServerSideProps = async () => {
     const res = await axios.get("https://mobodev.herokuapp.com/api/posts?populate=*")
+    const res2 = await axios.get("https://mobodev.herokuapp.com/api/posts/1?populate=*")
     const posts = res.data.data
-    console.log(posts)
+    const posts2 =  res2.data.data
+
+    console.log(posts2.attributes.cover.data.attributes.url)
     
     return {
         props: {
