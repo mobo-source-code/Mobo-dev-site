@@ -53,7 +53,7 @@ const Single = ({post}) => {
             <NextSeo {...SEO} />
             <Nav />
             <div className="flex flex-col justify-center items-center mt-20">
-                <Image height={500} width={750} src={"https://mobodev.herokuapp.com" + post.attributes.cover.data.attributes.url} />
+                <Image height={500} width={750} src={"https://mobodev.herokuapp.com" + post.attributes.cover.data[0].attributes.url} />
                 <h1 className="text-4xl font-bold text-center mt-28">
                     {post.attributes.title}
                 </h1>
