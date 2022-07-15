@@ -13,8 +13,11 @@ module.exports = {
       colors: {
         prime: "#222831",
         sec: "#00ADB5"
-      }
+      },
+      backgroundImage: {
+        'pack-train': "https://treurgia.sirv.com/mobo_pics/aditya-chinchure-S1ToogvRvlU-unsplash.jpg",
+      },
     },
   },
-  plugins: [],
+  plugins: [require('@tailwindcss/typography')],
 }

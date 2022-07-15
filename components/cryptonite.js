@@ -1,6 +1,16 @@
 import React from "react";
+import Slider from "react-slick";
+import Image from "next/image";
 
 const Cryptonite = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="flex flex-col mt-20">
       <div className="flex flex-col justify-start">
@@ -46,7 +56,23 @@ const Cryptonite = () => {
           </p>
         </div>
       </div>
-      <div></div>
+      <Slider {...settings}>
+        <Image
+          src="https://treurgia.sirv.com/portfolio/Header.png"
+          height={1024}
+          width={1440}
+        />
+        <Image
+          src="https://treurgia.sirv.com/portfolio/Dashboard.png"
+          height={1024}
+          width={1440}
+        />
+        <Image
+          src="https://treurgia.sirv.com/portfolio/HOW.png"
+          height={1024}
+          width={1440}
+        />
+      </Slider>
     </div>
   );
 };

@@ -1,6 +1,30 @@
 import React from "react";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import Image from "next/image";
+
+const SamplePrevArrow = (props) => {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, background: "teal", width: "30px" }}
+      onClick={onClick}
+    />
+  );
+};
 
 const Shell = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: <SamplePrevArrow />,
+  };
+
   return (
     <div className="flex flex-col mt-20">
       <div className="flex flex-col items-center justify-center">
@@ -100,7 +124,31 @@ const Shell = () => {
           </p>
         </div>
       </div>
-      <div></div>
+      <Slider {...settings}>
+        <Image
+          src="https://treurgia.sirv.com/portfolio/home-dash.png"
+          height={1024}
+          width={1440}
+        />
+
+        <Image
+          src="https://treurgia.sirv.com/portfolio/add-prod.png"
+          height={1024}
+          width={1440}
+        />
+
+        <Image
+          src="https://treurgia.sirv.com/portfolio/prod-list.png"
+          height={1024}
+          width={1440}
+        />
+
+        <Image
+          src="https://treurgia.sirv.com/portfolio/add-fourni.png"
+          height={1024}
+          width={1440}
+        />
+      </Slider>
     </div>
   );
 };

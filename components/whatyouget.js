@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const WYG = () => {
@@ -59,9 +60,12 @@ const WYG = () => {
           </ul>
         </p>
       </div>
-      <button className="h-16 px-6 mt-10 text-xl text-indigo-100 rounded-lg w-80 md:w-96 font-sub transition-colors duration-150 bg-prime focus:shadow-outline hover:bg-sec hover:text-prime">
-        Schedule a call now
-      </button>
+      <Link href="https://calendly.com/bouaziz-tech" passHref={true}>
+        <button className="h-16 px-6 mt-10 text-xl text-indigo-100 rounded-lg w-80 md:w-96 font-sub transition-colors duration-150 bg-prime focus:shadow-outline hover:bg-sec hover:text-prime">
+        Claim my free audit
+        </button>
+      </Link>
+      
     </div>
   );
 };

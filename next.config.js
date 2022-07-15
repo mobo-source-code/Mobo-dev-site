@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["treurgia.sirv.com"],
+    domains: ["treurgia.sirv.com", "localhost", "mobodev.herokuapp.com"],
   },
 };
 

@@ -10,9 +10,20 @@
   },
   "dependencies": {
     "@heroicons/react": "^1.0.6",
+    "@tailwindcss/typography": "^0.5.3",
+    "axios": "^0.27.2",
+    "googleapis": "^105.0.0",
+    "markdown-it": "^13.0.1",
     "next": "12.1.4",
+    "next-seo": "^5.4.0",
+    "nodemailer": "^6.7.7",
     "react": "18.0.0",
-    "react-dom": "18.0.0"
+    "react-calendly": "^4.0.1",
+    "react-dom": "18.0.0",
+    "react-icons": "^4.3.1",
+    "react-slick": "^0.29.0",
+    "react-web-share": "^1.1.6",
+    "slick-carousel": "^1.8.1"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.4",

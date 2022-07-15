@@ -1,4 +1,15 @@
+import dynamic from "next/dynamic";
+import Link from "next/link";
+
+
+const DynamicComponent = dynamic(
+  () => import ('./schedule'),
+  {ssr: false}
+)
+
 const Intro = () => {
+
+
   return (
     <>
       <div className="flex flex-col items-center justify-center mt-20 space-y-3">
@@ -45,13 +56,16 @@ const Intro = () => {
           </ul>
         </div>
         <br />
-        <button
-          class="w-80 md:w-96 h-16 px-6 text-indigo-100 font-sub text-xl transition-colors 
-                        duration-150 bg-prime rounded-lg 
-                        focus:shadow-outline hover:bg-sec hover:text-prime"
-        >
-          Schedule a call now
-        </button>
+        <Link href="https://calendly.com/bouaziz-tech" passHref={true}>
+          <button
+            className="w-80 md:w-96 h-16 px-6 text-indigo-100 font-sub text-xl transition-colors 
+                          duration-150 bg-prime rounded-lg 
+                          focus:shadow-outline hover:bg-sec hover:text-prime">
+            Claim my free audit
+          </button>
+        </Link>
+        
+        <DynamicComponent />
       </div>
     </>
   );

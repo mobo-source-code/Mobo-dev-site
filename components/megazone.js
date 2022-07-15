@@ -1,6 +1,16 @@
 import React from "react";
+import Slider from "react-slick";
+import Image from "next/image";
 
 const Megazone = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <div className="flex flex-col p-6 mt-20 bg-gray-200 rounded-lg">
       <div className="flex flex-col justify-start">
@@ -72,7 +82,28 @@ const Megazone = () => {
           </p>
         </div>
       </div>
-      <div></div>
+      <Slider {...settings}>
+        <Image
+          src="https://treurgia.sirv.com/portfolio/megazone-dash.png"
+          height={1024}
+          width={1440}
+        />
+        <Image
+          src="https://treurgia.sirv.com/portfolio/megazone-all.png"
+          height={1024}
+          width={1440}
+        />
+        <Image
+          src="https://treurgia.sirv.com/portfolio/megazone-admin.png"
+          height={1024}
+          width={1440}
+        />
+        <Image
+          src="https://treurgia.sirv.com/portfolio/megazone-add.png"
+          height={1024}
+          width={1440}
+        />
+      </Slider>
     </div>
   );
 };
