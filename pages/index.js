@@ -17,6 +17,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { PopupWidget } from "react-calendly";
 import dynamic from "next/dynamic";
+import Script from "next/script";
 
 const DynamicComponent = dynamic(
   () => import ('../components/schedule'),
@@ -39,6 +40,13 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&family=Ubuntu:wght@400;500;700&family=Varela+Round&display=swap"
           rel="stylesheet"
         />
+        <Script strategy="afterInteractive" 
+                dangerouslySetInnerHTML={{
+                  __html: `
+                  (function(s,u,m,o,j,v){j=u.createElement(m);v=u.getElementsByTagName(m)[0];j.async=1;j.src=o;j.dataset.sumoSiteId='7a20462fb80eeaa2b49821319a3082ca8cc5bc55782d31040aa253c39d94b9a3';v.parentNode.insertBefore(j,v)})(window,document,'script','//load.sumo.com/')
+                `,
+                }}
+                />
       </Head>
       <header>
         <Nav />
