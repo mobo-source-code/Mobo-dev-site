@@ -31,7 +31,7 @@ const All_Posts = ({posts, posts2}) => {
                             <Image layout="fill" objectFit="fill" src={"https://mobodev.herokuapp.com" + p.attributes.cover.data.attributes.url} />
 
                         </div>
-                            <div className="flex flex-col w-96">
+                            <div className="flex flex-col w-full pr-8 md:pr-0 md:w-96">
                                 <div className="font-bold text-xl text-right">{p.attributes.title}</div>
                                 <p className="text-sm text-right mt-3">{p.attributes.description}</p>
                             </div>    
