@@ -9,5 +9,14 @@
   li {
     @apply hover:text-sec cursor-pointer
   }
+  .multiple-sumome-warning-toast .sumome-doctype-notice {
+    @apply invisible
+  }
+}
+
+@layer components {
+  .multiple-sumome-warning-toast .sumome-doctype-notice {
+    @apply invisible
+  }
 }
 
