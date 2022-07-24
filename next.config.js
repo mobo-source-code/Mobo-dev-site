@@ -2,7 +2,7 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: ["treurgia.sirv.com", "localhost", "mobodev.herokuapp.com"],
+    domains: ["treurgia.sirv.com", "mobodev.herokuapp.com", "mobodev.com"],
   },
   eslint: {
     // Warning: This allows production builds to successfully complete even if
