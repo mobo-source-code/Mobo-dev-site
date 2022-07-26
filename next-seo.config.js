@@ -8,8 +8,8 @@ export default {
       site_name: 'MoboDev - Grow your business, upsacle the competition, and reach peak performance',
     },
     twitter: {
-      handle: '@handle',
-      site: '@site',
+      handle: '@MoBouaziz',
+      site: 'mobodev.com',
       cardType: 'summary_large_image',
     },
   };
