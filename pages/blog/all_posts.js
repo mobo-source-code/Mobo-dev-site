@@ -5,7 +5,7 @@ import Image from "next/image";
 import Footer from "../../components/footer";
 import { NextSeo } from "next-seo";
 
-const All_Posts = ({posts, posts2}) => {
+const All_Posts = ({posts}) => {
     
 
     const SEO = {
