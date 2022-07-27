@@ -25,7 +25,7 @@ export const getServerSideProps = async ({ res }) => {
       return `${BASE_URL}/${staticPagePath}`;
     });
 
-    const res = await axios.get("https://mobodev.herokuapp.com/api/posts?populate=*")
+    var res = await axios.get("https://mobodev.herokuapp.com/api/posts?populate=*")
     const posts = res.data.data
     const dynamicPaths = posts?.map( singlePost => {
   
