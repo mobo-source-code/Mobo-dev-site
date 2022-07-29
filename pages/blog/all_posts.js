@@ -25,10 +25,10 @@ const All_Posts = ({posts}) => {
         <div className="mt-28 flex flex-col space-y-10">
             {posts ? posts.map( p => (
                 <Link href={`/blog/${p.id}`}>
-                    <div className="flex flex-col md:flex-row md:my-10 items-center justify-center space-x-10 cursor-pointer bg-gray-200 p-4 rounded-lg hover:bg-gray-300 hover:rounded-lg hover:p-6 transition ease-in duration-300">
+                    <div className="flex flex-col md:flex-row md:my-10 items-center justify-center border-b-8 border-gray-500 space-x-10 cursor-pointer p-4 rounded-lg hover:bg-gray-300 hover:rounded-lg hover:p-6 transition ease-in duration-300">
                             <div className="flex flex-col w-full pr-8 md:pr-0 md:w-full">
-                                <div className="font-bold text-xl text-right">{p.attributes.title}</div>
-                                <p className="text-sm text-right mt-3">{p.attributes.description}</p>
+                                <div className="font-bold text-3xl text-left">{p.attributes.title}</div>
+                                <p className="text-xl text-left mt-3">{p.attributes.description}</p>
                             </div>    
                 </div> 
                </Link>
