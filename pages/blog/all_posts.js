@@ -32,7 +32,7 @@ const All_Posts = ({posts}) => {
                             </div>    
                 </div> 
                </Link>
-            )) : <div>No posts</div>}
+            )) : <div>No post</div>}
         </div>
         </>
     )
