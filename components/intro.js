@@ -1,11 +1,7 @@
-import dynamic from "next/dynamic";
 import Link from "next/link";
 
 
-const DynamicComponent = dynamic(
-  () => import ('./schedule'),
-  {ssr: false}
-)
+
 
 const Intro = () => {
 
@@ -16,7 +12,7 @@ const Intro = () => {
         <div className="flex flex-col items-center justify-between md:flex-row space-y-3 md:space-y-0 md:space-x-3">
           <div className="h-0.5 w-40 bg-prime"></div>
           <h2 className="text-xl text-center font-sub text-prime">
-            For Business Owners, Executives and Future Startup Builders
+            For Business Owners, Executives, Entrepreneurs and Future Startup Builders
           </h2>
           <div className="h-0.5 w-40 bg-prime"></div>
         </div>
@@ -24,30 +20,31 @@ const Intro = () => {
           <h1>Aggressively Grow Your Business, Beyond Expectations.</h1>
           <h1>Upscale Your Competition.</h1>
           <h1>& Reach the highest level of performance.</h1>
+          <h1>Trough Digital Transformation</h1>
         </div>
         <div className="flex flex-col items-center justify-center p-10 text-xl font-bold bg-gray-200 md:flex-row space-y-10 md:space-y-0 md:space-x-16 font-text md:ml-10 ml:p-16 rounded-xl">
           <ul className="flex flex-col list-disc space-y-10">
             <li>
-              Achieve Massive Growth in a short span of time with a minimal
+              Succeed in your digital transformation and Achieve Massive Growth in a short span of time with a minimal
               investment.
             </li>
             <li>
               Build the technological solution you always wished you had and
-              solve most of your business problems.
+              solve most of your business problems leveraging the technologies used in digital transformation.
             </li>
             <li>
-              Leverage the power of technology to boost the performance of your
+              Leverage the power of technology and digital transformation to boost the performance of your
               company, use technology as your main strategic asset.
             </li>
           </ul>
           <ul className="flex flex-col list-disc space-y-10">
             <li>
-              Build the app you always dreamed about, launch and scale it to
+              Build the mobile app you always dreamed about, launch and scale it to
               achieve massive success.{" "}
             </li>
             <li>
               Compete at the highest business level and leave your competition
-              in the dust.
+              in the dust. 
             </li>
             <li>
               Build the app you imagine, make it a reality in less than 6 weeks
@@ -56,16 +53,15 @@ const Intro = () => {
           </ul>
         </div>
         <br />
-        <Link href="https://calendly.com/bouaziz-tech" passHref={true}>
+        <Link href="contact/" passHref={true}>
           <button
             className="w-80 md:w-96 h-16 px-6 text-indigo-100 font-sub text-xl transition-colors 
                           duration-150 bg-prime rounded-lg 
                           focus:shadow-outline hover:bg-sec hover:text-prime">
-            Claim my free audit
+            Let's Talk !
           </button>
         </Link>
         
-        <DynamicComponent />
       </div>
     </>
   );

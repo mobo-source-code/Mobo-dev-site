@@ -30,7 +30,7 @@ const Shell = () => {
       <div className="flex flex-col items-center justify-center">
         <div className="h-0.5 w-1/2 bg-prime"></div>
         <h1 className="py-6 text-4xl font-bold text-center font-head">
-          Let's show you some success stories that prove our methods work across
+          Let's show you some digital transformation success stories that prove our methods work across
           every industry
         </h1>
         <div className="h-0.5 w-1/2 bg-prime mb-10"></div>

@@ -9,7 +9,8 @@ const BusinessProb = () => {
             As an Entrepreneur, Business Owner or Manager,
             You have been facing <br/> 
             <span className='text-sec'>Fears</span> and <span className='text-sec'>Obstacles</span> <br/>
-            That stand in your way to that phenomenal growth 
+            That stand in your way to that phenomenal growth and 
+            The digital transformation of your business is the key to achieve that growth.
         </h1>
         <div className="h-1 w-1/2 bg-prime mt-7"></div>
         <div className="flex">
@@ -29,7 +30,7 @@ const BusinessProb = () => {
         </div>
         <h1 className="font-bold font-sub text-2xl text-prime text-center mt-16 leading-10">
             "I know these fears because I've built more than 35 web and mobile apps <br/> 
-            and worked with a dozen business owners and managers in the past 7 years,<br/> 
+            and worked with a dozen business owners and managers helping them succeed in their digital transformation.<br/> 
             and i helped them overcome those fears and obstacles"
         </h1>
         <p className="font-text text-md font-light text-prime w-full md:w-3/4 text-justify mt-10 leading-8 bg-gray-200 p-6 rounded-lg">
@@ -54,14 +55,15 @@ const BusinessProb = () => {
             <strong className='font-bold'>
                 These problems are draining you and you need tools, 
             serious, powerful tools to overcome them. Your competition might already be using those tools, 
-            how can you hope to win this race without putting every resource and asset on your side.
+            how can you hope to win this race without putting every resource and asset on your side. You need the power that digital transformation has to offer, big companies are leveraging these technologies today,
+            you can start your business digital transformation too, and achieve insane results.
             </strong> 
             
         </p>
-        <Link href="https://calendly.com/bouaziz-tech" passHref={true}>
+        <Link href="contact/" passHref={true}>
             <button className="w-80 md:w-96 h-16 px-6 text-indigo-100 font-sub text-xl transition-colors 
                             duration-150 bg-prime rounded-lg 
-                            focus:shadow-outline hover:bg-sec hover:text-prime mt-7">Claim my free audit</button>
+                            focus:shadow-outline hover:bg-sec hover:text-prime mt-7">Let's Talk</button>
         </Link>
         
     </div>

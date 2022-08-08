@@ -4,6 +4,7 @@ import Nav from "../../components/nav"
 import MarkdownIt from "markdown-it"
 import { NextSeo } from "next-seo";
 import DisqusComments from "../../components/disqus";
+import Social from "../../components/social";
 
 export const getStaticPaths = async () => {
     const res = await axios.get("https://mobodev.herokuapp.com/api/posts?populate=*")
@@ -81,6 +82,7 @@ const Single = ({post}) => {
                 <section className="mt-28 mb-28 prose max-w-none text-justify w-4/5 prose-teal" dangerouslySetInnerHTML={{__html: htmlContent}}></section>
             </div>
             <DisqusComments post={post} />            
+            <Social />
         </>
     )
 }

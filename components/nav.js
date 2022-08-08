@@ -4,14 +4,13 @@ import {
 } from "@heroicons/react/outline"
 import HeaderIcon from "./headericon";
 import Link from "next/link";
+import Image from "next/image";
 
 const Nav = () => {
   return (
     <nav className="flex justify-between font-sub font-bold text-prime">
-        <div className="uppercase hover:text-sec cursor-pointer">
-            <div>Mo</div>
-            <div>Ha</div>
-            <div>med.</div>
+        <div className="uppercase hover:text-sec cursor-pointer flex items-center">
+            <Image height={30} width={59} src="https://treurgia.sirv.com/mobo_pics/MB.png" />  
         </div>
         <ul className="flex flex-col space-y-1 md:flex-row items-center justify-center md:space-x-10 md:space-y-0">
             <Link href="/" >
@@ -26,7 +25,7 @@ const Nav = () => {
                 <Link href="/">
                   <HeaderIcon Icon={ShareIcon} />
                 </Link>
-                <Link href="https://calendly.com/bouaziz-tech" passHref={true}>
+                <Link href="contact/" passHref={true}>
                   <a><HeaderIcon Icon={MailIcon} /></a>
                 </Link>
                 

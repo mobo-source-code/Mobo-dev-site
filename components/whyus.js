@@ -25,13 +25,13 @@ const Whyus = () => {
           them how we helped you get there.
         </p>
       </div>
-      <Link href="https://calendly.com/bouaziz-tech" passHref={true}>
+      <Link href="contact/" passHref={true}>
         <button
           className="w-80 md:w-96 h-16 px-6 text-indigo-100 font-sub text-xl transition-colors 
                           duration-150 bg-prime rounded-lg 
                           focus:shadow-outline hover:bg-sec hover:text-prime mt-10"
         >
-          Claim my free audit
+          Let's Talk
         </button>
       </Link>
       

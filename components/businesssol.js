@@ -10,6 +10,7 @@ const BusinessSol = () => {
         <span className="text-sec">Take down</span> the obstacles and <br />
         Put <span className="text-sec">You</span> at the{" "}
         <span className="text-sec">Top</span> of your industry
+        All trough the power of digital transformation
       </h1>
       <div className="w-1/2 h-1 bg-prime mt-7"></div>
       <div className="flex">
@@ -62,13 +63,13 @@ const BusinessSol = () => {
           it was mesmerizing.
         </p>
       </div>
-      <Link href="https://calendly.com/bouaziz-tech" passHref={true}>
+      <Link href="contact/" passHref={true}>
         <button
           className="w-80 md:w-96 h-16 px-6 text-indigo-100 font-sub text-xl transition-colors 
                           duration-150 bg-prime rounded-lg 
                           focus:shadow-outline hover:bg-sec hover:text-prime mt-10"
         >
-          Claim my free audit
+          Let's Talk
         </button>
       </Link>
       

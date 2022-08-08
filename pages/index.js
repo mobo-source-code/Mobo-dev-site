@@ -15,14 +15,9 @@ import Corevalues from "../components/corevalues";
 import Whywedoit from "../components/whywedoit";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { PopupWidget } from "react-calendly";
-import dynamic from "next/dynamic";
-import Script from "next/script";
+import Social from "../components/social";
 
-const DynamicComponent = dynamic(
-  () => import ('../components/schedule'),
-  {ssr: false}
-)
+
 
 export default function Home() {
   return (
@@ -58,6 +53,7 @@ export default function Home() {
         <Whyus />
         <Corevalues />
         <Whywedoit />
+        <Social />
       </main>
     </>
   );

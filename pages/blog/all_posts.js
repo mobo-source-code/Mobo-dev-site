@@ -4,6 +4,7 @@ import Nav from "../../components/nav";
 import Image from "next/image";
 import Footer from "../../components/footer";
 import { NextSeo } from "next-seo";
+import Social from "../../components/social";
 
 const All_Posts = ({posts}) => {
     
@@ -33,6 +34,7 @@ const All_Posts = ({posts}) => {
                 </div> 
                </Link>
             )) : <div>No post</div>}
+        <Social />
         </div>
         </>
     )
