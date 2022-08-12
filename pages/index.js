@@ -16,6 +16,8 @@ import Whywedoit from "../components/whywedoit";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Social from "../components/social";
+import Keys from "../components/keyfactors";
+import Process from "../components/process";
 
 
 
@@ -50,6 +52,8 @@ export default function Home() {
         <WYG />
         <Testimonials />
         <Godfatheroffer />
+        <Keys />
+        <Process />
         <Whyus />
         <Corevalues />
         <Whywedoit />
