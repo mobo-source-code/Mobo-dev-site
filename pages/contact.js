@@ -66,7 +66,7 @@ const Contact = () => {
             
             <div className="bg-white rounded-lg p-14 flex justify-center">
             <form ref={form} onSubmit={sendEmail}>
-        <div className="bg-white pl-10 p-6  rounded-lg flex flex-col space-y-10 w-3/5">
+        <div className="bg-none md:bg-white pl-20 md:pl-10 md:p-6 p-20 rounded-lg flex flex-col space-y-10 w-3/5">
             <label className="flex gap-x-2 items-baseline">  
                 <span className="text-gray-700">
                     <p className="font-bold text-md font-source">Your name</p>
@@ -74,7 +74,7 @@ const Contact = () => {
                         onChange={e => setName(e.target.value)} 
                         placeholder="Name..."
                         type="text"
-                        className="mt-1 w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        className="mt-1 w-60 md:w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                         />
                 </span>
             </label>
@@ -85,7 +85,7 @@ const Contact = () => {
                         onChange={e => setPhone(e.target.value)} 
                         placeholder="Phone..."
                         type="text"
-                        className="mt-1 w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        className="mt-1 w-60 md:w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                         />
                 </span>
             </label>
@@ -96,7 +96,7 @@ const Contact = () => {
                         onChange={e => setCountry(e.target.value)} 
                         placeholder="Country..."
                         type="text"
-                        className="mt-1 w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        className="mt-1 w-60 md:w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                         />
                 </span>
             </label>
@@ -107,11 +107,11 @@ const Contact = () => {
                         onChange={e => setMail(e.target.value)} 
                         placeholder="E-mail..."
                         type="text"
-                        className="mt-1 w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
+                        className="mt-1 w-60 md:w-80 p-3 outline-none inline rounded-md border-gray-300 shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50"
                         />
                 </span>
             </label>
-            <button type="submit" className="w-80 h-10 px-4 py-0 tracking-wide text-white transition-colors duration-200 transform bg-green-500 rounded hover:bg-green-300 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+            <button type="submit" className="w-60 md:w-80 h-10 md:px-4 py-0 tracking-wide text-white transition-colors duration-200 transform bg-green-500 rounded hover:bg-green-300 focus:outline-none focus:bg-blue-400 focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                     Book your seesion now
             </button>
         </div>
